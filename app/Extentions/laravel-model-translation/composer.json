@@ -1,0 +1,63 @@
+{
+    "name": "we-are-neopix/laravel-model-translation",
+    "description": "This package is a driver based solution to translating Laravel models. It contains two drivers for storing translations in the database and in a JSON file, but also contains a plug-and-play system for its users to implement custom drivers for storing translations and use them with the package.",
+    "keywords": [
+        "neopix",
+        "laravel-model-translation",
+        "laravel",
+        "translation",
+        "multi-language",
+        "eloquent",
+        "multilingual",
+        "i18n"
+    ],
+    "homepage": "https://github.com/neopix/laravel-model-translation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miša Ković",
+            "email": "misa@weareneopix.com",
+            "homepage": "https://weareneopix.com",
+            "role": "Original idea, developer"
+        },
+        {
+            "name": "Jovan Turanjanin",
+            "email": "jovan@weareneopix.com",
+            "homepage": "https://weareneopix.com",
+            "role": "Supervisor"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeAreNeopix\\LaravelModelTranslation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WeAreNeopix\\LaravelModelTranslation\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --config tests/phpunit.xml --bootstrap vendor/autoload.php"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WeAreNeopix\\LaravelModelTranslation\\ModelTranslationServiceProvider"
+            ],
+            "aliases": {
+                "Translation": "WeAreNeopix\\LaravelModelTranslation\\Translation"
+            }
+        }
+    }
+}
