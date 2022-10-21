@@ -2,7 +2,7 @@
 //  File Name: pricing.scss
 //  Description: pricing Page Content SCSS
 //  ----------------------------------------------------------------------------------------------
-//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 //  Author: PIXINVENT
 //  Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -76,7 +76,7 @@
 }
 
 // price trial ad card in small screen
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .pricing-free-trial {
     height: auto;
     .pricing-trial-content {
@@ -92,7 +92,7 @@
 }
 
 // free trial div margin change on below screen
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .pricing-free-trial {
     margin-right: -1.2rem;
     margin-left: -1.2rem;

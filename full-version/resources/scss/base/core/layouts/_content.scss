@@ -2,7 +2,7 @@
 //     File Name: content.scss
 //     Description: Page content level SCSS for different screen size, layout and device.
 //     ----------------------------------------------------------------------------------------------
-//     Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//     Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 //     Author: PIXINVENT
 //     Authuseror URL: http://www.themeforest.net//pixinvent
 // ================================================================================================
@@ -424,7 +424,7 @@ html {
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xs) {
   html body .app-content {
     padding: calc(#{$content-padding} - 0.8rem + #{$navbar-height} + #{$floating-nav-margin})
       calc(#{$content-padding} - 0.8rem) 0 calc(#{$content-padding} - 0.8rem) !important; // - 0.8rem to reduce padding in small screen
@@ -447,7 +447,7 @@ html {
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xs) {
   .navbar-static,
   .navbar-sticky {
     .app-content {

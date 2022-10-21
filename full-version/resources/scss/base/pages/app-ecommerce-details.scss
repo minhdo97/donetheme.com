@@ -2,7 +2,7 @@
 //  File Name: app-ecommerce-details.scss
 //  Description: App Ecommerce Details SCSS.
 //  ----------------------------------------------------------------------------------------------
-//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 //  Author: PIXINVENT
 //  Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -266,12 +266,12 @@
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .ecommerce-application .swiper-responsive-breakpoints.swiper-container .swiper-slide {
     padding: 1rem;
   }
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .ecommerce-application {
     .app-ecommerce-details {
       // ratings style

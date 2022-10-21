@@ -26,7 +26,7 @@
     border-color: $border-color;
     // &:after,
     // &:before {
-    //   border-left-color: $body-bg;
+    //   border-bottom-color: $body-bg;
     // }
   }
   .apexcharts-xaxistooltip-bottom {
@@ -37,6 +37,7 @@
       border-bottom-color: $body-bg;
     }
   }
+
   .apexcharts-xaxistooltip-top {
     &:before {
       border-top-color: $border-color;
@@ -61,6 +62,7 @@
       border-right-color: $body-bg;
     }
   }
+
   .apexcharts-text,
   .apexcharts-tooltip-text,
   .apexcharts-datalabel-label,
@@ -181,10 +183,15 @@
         border-right-color: $theme-dark-body-bg;
       }
     }
+
     .apexcharts-xaxistooltip,
     .apexcharts-yaxistooltip {
       background: $theme-dark-body-bg;
       border-color: $theme-dark-border-color;
+      // &:after,
+      // &:before {
+      //   border-bottom-color: $theme-dark-border-color;
+      // }
       .apexcharts-xaxistooltip-text,
       .apexcharts-yaxistooltip-text {
         color: $white;

@@ -33,8 +33,8 @@ $step-box-width: 38px;
       margin-bottom: .25rem;
       margin-top: .25rem;
       .step-trigger {
-        flex-wrap: nowrap;
         padding: 0;
+        flex-wrap: nowrap;
         font-weight: normal;
         .bs-stepper-box {
           display: flex;
@@ -106,17 +106,6 @@ $step-box-width: 38px;
           color: $primary;
         }
       }
-
-      // &:first-child {
-      //   .step-trigger {
-      //     padding-left: 0;
-      //   }
-      // }
-      // &:last-child {
-      //   .step-trigger {
-      //     padding-right: 0;
-      //   }
-      // }
     }
   }
   .bs-stepper-content {

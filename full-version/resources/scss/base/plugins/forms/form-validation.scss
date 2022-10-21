@@ -12,6 +12,23 @@ form {
   input.error,
   input.error:focus {
     border-color: $danger !important;
+    ~ .custom-control-label::before,
+    ~ .custom-file-label {
+      border-color: $danger !important;
+    }
+    ~ .custom-control-label {
+      color: $danger;
+    }
+  }
+  .form-group {
+    .custom-control-input.error {
+      cursor: pointer;
+      & {
+        ~ .custom-control-label:before {
+          border-color: $danger !important;
+        }
+      }
+    }
   }
   textarea.error {
     border-color: $danger !important;
@@ -24,10 +41,4 @@ form {
       border-color: $danger !important;
     }
   }
-}
-.was-validated .form-select:invalid:not([multiple]):not([size]),
-.was-validated .form-select:invalid:not([multiple])[size='1'],
-.form-select.is-invalid:not([multiple]):not([size]),
-.form-select.is-invalid:not([multiple])[size='1'] {
-  background-position: right 1rem center, center right 2.5rem;
 }

@@ -2,7 +2,7 @@
 //   File Name: app-chat.scss
 //   Description: SCC file for chat application page.
 //   ----------------------------------------------------------------------------------------------
-//   Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//   Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 //   Author: PIXINVENT
 //   Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -285,7 +285,7 @@ $chat-profile-sidebar-head-height: 200px;
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
   .content-right {
     width: 100%;
   }
@@ -302,7 +302,7 @@ $chat-profile-sidebar-head-height: 200px;
     }
   }
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .chat-application {
     .sidebar-content {
       .sidebar-close-icon {
@@ -318,7 +318,7 @@ $chat-profile-sidebar-head-height: 200px;
     }
   }
 }
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .chat-application {
     .sidebar {
       position: unset !important;

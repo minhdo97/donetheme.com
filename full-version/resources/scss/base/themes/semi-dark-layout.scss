@@ -2,7 +2,7 @@
 // 	File Name: semi-dark-layout.scss
 // 	Description: SCSS file for semi dark layout.
 // 	----------------------------------------------------------------------------------------------
-// 	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 // 	Author: PIXINVENT
 // 	Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -47,7 +47,7 @@
           color: $theme-dark-body-color;
         }
         &.open:not(.sidebar-group-active) {
-          > a {
+         > a {
             background-color: $theme-dark-body-bg;
           }
         }

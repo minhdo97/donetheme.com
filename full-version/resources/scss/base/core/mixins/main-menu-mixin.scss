@@ -2,7 +2,7 @@
 // File Name: main-menu-mixin.scss
 // Description: Common mixin for menus, contain dark and light version scss.
 // ----------------------------------------------------------------------------------------
-// Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 // Author: PIXINVENT
 // Author URL: http://www.themeforest.net/user/pixinvent
 //==========================================================================================
@@ -78,7 +78,7 @@
   );
   // responsive size height
   @if $horizontalLayout {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
       height: calc(
         100vh - calc(calc(calc(#{$contentPadding} - 0.8rem) * #{$spacingSides}) + #{$navbarHeight} + #{$footerHeight})
       );
@@ -88,7 +88,7 @@
       );
     }
   } @else {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(xs) {
       height: calc(
         100vh -
           calc(

@@ -88,16 +88,15 @@
         tr {
           td {
             .picker__day {
-              color: $theme-dark-body-color;
+              &:not(.picker__day--highlighted){
+                color: $theme-dark-body-color;
+              }
               &.picker__day--selected {
                 color: $white;
                 // color: $theme-dark-body-color;
               }
               &.picker__day--outfocus {
                 opacity: 0.65;
-              }
-              &.picker__day--today{
-                color: $white;
               }
 
               &:not(.picker__day--today):not(.picker__day--highlighted):hover {
@@ -140,7 +139,8 @@
         background-color: $theme-dark-body-bg;
 
         .picker__list-item {
-          &:not(.picker__list-item--selected):hover {
+          &.picker__list-item--selected,
+          &:hover {
             background-color: $theme-dark-card-bg;
           }
 

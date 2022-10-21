@@ -2,7 +2,7 @@
 // 	File Name: app-ecommerce.scss
 // 	Description: SCSS file for ecommerce shop, wishlist and checkout page.
 // 	----------------------------------------------------------------------------------------------
-// 	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Item Name: Vuexy - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
 // 	Author: PIXINVENT
 // 	Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -451,6 +451,9 @@ $search-bar-height: 48px;
           font-weight: $font-weight-bolder;
         }
       }
+      .input-group-append {
+        margin: 0;
+      }
       .input-group-text {
         height: auto;
         font-weight: $font-weight-bolder;
@@ -512,7 +515,7 @@ $search-bar-height: 48px;
   }
 }
 // Media queries to change grid columns in different Screens and to hide search results below 768px
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(lg) {
   .ecommerce-application {
     // Header item area
     .ecommerce-header-items {
@@ -553,7 +556,7 @@ $search-bar-height: 48px;
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
   .ecommerce-application {
     .sidebar-left {
       .sidebar {
@@ -595,7 +598,7 @@ $search-bar-height: 48px;
     }
   }
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .ecommerce-application {
     .grid-view.wishlist-items {
       grid-template-columns: 1fr 1fr;
@@ -618,7 +621,7 @@ $search-bar-height: 48px;
     }
   }
 }
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .ecommerce-application {
     // Grid View
     .grid-view,
