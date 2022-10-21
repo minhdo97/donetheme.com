@@ -1,0 +1,105 @@
+{
+    "menu": [
+        {
+            "url": "admin",
+            "name": "Dashboard",
+            "icon": "home",
+            "slug": "admin.dashboard",
+            "middleware": "Browser Dashboard",
+            "roles": ""
+        },
+        {
+            "name": "Admin",
+            "icon": "grid",
+            "slug": "",
+            "submenu": [
+                {
+                    "url": "admin/admins",
+                    "name": "Admin Users",
+                    "icon": "user",
+                    "slug": "admin.admins.index"
+                },
+                {
+                    "url": "admin/menu",
+                    "name": "Menu",
+                    "icon": "user",
+                    "slug": "admin.menu.index"
+                },
+                {
+                    "url": "admin/roles",
+                    "name": "Roles",
+                    "icon": "circle",
+                    "slug": "admin.roles.index"
+                },
+                {
+                    "url": "admin/permissions",
+                    "name": "Permission",
+                    "icon": "circle",
+                    "slug": "admin.permissions.index"
+                }
+            ]
+        },
+        {
+            "url": "admin/users",
+            "name": "Users",
+            "icon": "user",
+            "slug": "admin.users.index"
+        },
+        {
+            "name": "Projects",
+            "icon": "circle",
+            "slug": "",
+            "submenu": [
+                {
+                    "url": "admin/projects",
+                    "name": "Projects",
+                    "icon": "circle",
+                    "slug": "admin.projects.index"
+                },
+                {
+                    "url": "admin/project-categories",
+                    "name": "Project Categories",
+                    "icon": "circle",
+                    "slug": "admin.project-categories.index"
+                }
+            ]
+        },
+        {
+            "name": "Posts",
+            "icon": "circle",
+            "slug": "",
+            "submenu": [
+                {
+                    "url": "admin/posts",
+                    "name": "Posts",
+                    "icon": "circle",
+                    "slug": "admin.posts.index"
+                },
+                {
+                    "url": "admin/categories",
+                    "name": "Categories",
+                    "icon": "circle",
+                    "slug": "admin.categories.index"
+                }
+            ]
+        },
+        {
+            "url": "admin/pages",
+            "name": "Pages",
+            "icon": "circle",
+            "slug": "admin.pages.index"
+        },
+        {
+            "url": "admin/services",
+            "name": "Services",
+            "icon": "circle",
+            "slug": "admin.services.index"
+        },
+        {
+            "url": "admin/file-manager",
+            "name": "File Manager",
+            "icon": "save",
+            "slug": "admin.file-manager.index"
+        }
+    ]
+}

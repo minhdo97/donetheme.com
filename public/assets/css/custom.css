@@ -1,0 +1,25 @@
+.list-cat{
+    margin-top: 20px;
+}
+.list-cat a {
+    background: #ffffff;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin: 5px;
+    -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff2500), to(#ff7100));
+    background-image: linear-gradient(to right, #ff2500, #ff7100);
+}
+
+.list-cat a:hover ,.list-cat a.active{
+    background-image: -webkit-gradient(linear, left top, right top, from(#4400ff), to(#0077ff));
+    background-image: linear-gradient(to right, #4400ff, #0077ff);
+}
